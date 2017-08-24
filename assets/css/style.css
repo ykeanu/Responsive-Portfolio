@@ -1,0 +1,344 @@
+* {
+	text-align: center;
+}
+
+body {
+	background-image: url("../images/background.jpg");
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+.container {
+	width: 960px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+
+/* Top segment of website including header and navigation links. */
+.navigationBar {
+	/*background-color: #4285f4;*/
+	/*background-color:#3e3bf8;*/
+	background-color:#1f2849;
+	width: 100%
+	height: 75px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	border-bottom: 2.5px solid #FFFFFF;
+/*	border: 1px solid red;*/
+}
+
+.navigationContent {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*Header of 'Izzy Keanu'*/
+header {
+	float: left;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	padding: 25px 20px 25px 15px;
+}
+
+header a {
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* Hover over header */
+/*header a:hover {
+	color: #FF0000;
+}*/
+
+/*EXPERIMENTAL*/
+
+/*header a{
+	color: #FFF;
+	font-family: sans-serif;
+	transition: all ease-in-out .3s;
+		
+}
+
+header a:hover{
+  color: #0CF;
+}*/
+
+header a{
+/*  text-decoration: none;*/
+/*  background-color: #eee;*/
+/*  color: #999;
+  padding: 0 20px;*/
+  transition: all ease-in-out .3s;
+}
+
+header a:hover{
+  background-color: #93dfec;
+  color: #eee;
+  margin-left: -3px;
+}
+
+/*EXPERIMENTAL*/
+
+/* Navigation links */
+nav {
+	float: right;
+	/*border: 1px solid red;*/
+	padding: 20px 0px 20px 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	color: #FFFFFF;
+	display: block;
+	padding: 8px;
+	font-size: 15px;
+	text-decoration: none
+}
+
+/* Hover over links */
+li a:hover {
+	color: #93dfec;
+}
+
+/* Clearing floats after navigation bar */
+.navigationBar::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mainContent {
+	margin: 30px 0px 100px 0px;
+	padding: 0;
+	/*border: 1px solid red;*/
+}
+
+/*This is the about me section that displays the header, image, and short bio.*/
+
+h1 {
+	text-align: left;
+	color: #1f2849;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: -0.3px 0 white, 0 0.3px white, 0.3px 0 white, 0 -0.3px white;
+}
+
+section {
+	background-color: #efefef;
+	float: left;
+	width: 618px;
+	border: 1px solid #1f2849;
+	padding: 20px 15px 20px 15px;
+}
+
+.mainBio img {
+	width: 40%;
+	height: 40%;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+section p {
+	text-align: left;
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: 0px;
+}
+
+/*This is styling for the Contact Me sidebar.*/
+
+aside {
+	background-color: #efefef;
+	float: right;
+	width: 238px;
+	border: 1px solid #1f2849;
+	padding: 20px 15px 20px 15px;
+}
+
+h2 {
+	text-align: left;
+	color: #1f2849;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: -0.3px 0 white, 0 0.3px white, 0.3px 0 white, 0 -0.3px white;
+}
+
+.socialMedia img {
+	width: 32%;
+	height: 32%;
+}
+
+.socialMedia a{
+	text-decoration: none;
+}
+
+.socialMedia a:hover{
+	filter: opacity(.7);
+	-webkit-filter: opacity(.7);
+	text-shadow: -1px -1px 0px #000;
+}
+
+.socialMedia {
+	/*margin: 20px 15px 20px 15px;*/
+}
+.mainContent::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+footer {
+/*	background-color: #3F5295;*/
+	background-color: #6C7595;
+	height: 75px;
+	border-top: 2.5px solid #FFFFFF;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 2;
+}
+
+footer p {
+	color: #FFFFFF;
+	font-size: 12px;
+	margin: 0;
+	padding: 25px 20px 25px 15px;
+}
+
+/*PORFOLIO.HTML*/
+
+.mainPortfolio img {
+	width: 46.5%;
+	height: 46.5%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+/*    -webkit-filter: sepia(1);
+  	filter: sepia(1);*/
+/*  	filter: blur(1px);*/
+	float: left;
+	margin: 10px;
+}
+
+.mainPortfolio img:hover{
+  filter: none;
+  -webkit-filter: none;
+}
+
+.project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+	position: relative;
+	z-index: , 0;
+}
+
+.project-name-1 {
+	position: absolute;
+	top: 200px;
+	left: 10px;
+	z-index: 1;
+}
+
+.project-name-2 {
+	position: absolute;
+	top: 200px;
+	left: 317px;
+	z-index: 1;
+}
+
+.project-name-3 {
+	position: absolute;
+	top: 518px;
+	left: 10px;
+	z-index: 1;
+}
+
+.project-name-4 {
+	position: absolute;
+	top: 518px;
+	left: 317px;
+	z-index: 1;
+}
+
+.project-name-5 {
+	position: absolute;
+	top: 826px;
+	left: 10px;
+	z-index: 1;
+}
+
+.project-name-6 {
+	position: absolute;
+	top: 826px;
+	left: 317px;
+	z-index: 1;
+}
+
+h3 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+.mainContent::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*CONTACT.HTML*/
+
+.mainForm h3, .mainForm form, input, textarea{
+	text-align: left;
+}
+
+.inputSmall {
+	color: #D3D3D3;
+	width: 33%;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input:focus, textarea:focus {
+    color: #000000;
+}
+
+.inputSubmit {
+	color: #FFFFFF;
+	background-color:#1f2849;
+	border-color: #1f2849;
+	padding: 7.5px 22.5px 7.5px 22.5px;
+}
+
+/*.shortFooter {
+	position: absolute;
+  	right: 0;
+ 	bottom: 0;
+	left: 0;
+}
+
+*/
